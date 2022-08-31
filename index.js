@@ -1,6 +1,6 @@
 const express =  require("express");
 const app = express();
-const port = process.env.Port | 5000;
+const port = process.env.Port || 5000;
 
 app.listen(port,function () {
     console.log("sever is running....");
@@ -10,11 +10,11 @@ app.use(express.static("public"));
 
 const mysql = require("mysql");
 const conn = mysql.createConnection({
-    host:"localhost",
+    host:"db4free.net",
     port:"3306",
-    user:"root",
-    password:"",
-    database:"e-project",
+    user:"group3eproject",
+    password:"T2203eGroup3",
+    database:"eprojectgroup3",
     multipleStatements: true
 
 });
